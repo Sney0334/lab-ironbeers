@@ -2,11 +2,7 @@
 <section class="allBeers">
     <dl>
     {{#each beers}}
-    <dt> {{ this.name }} </dt>
-    <dd><img src={{image_url}} alt="beers" class="imgBeers">
-    <br>
-    {{this.description}}
-    </dd>
+   {{> beerpartials}}
     {{/each}}
 </dl>
    
